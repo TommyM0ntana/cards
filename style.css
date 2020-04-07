@@ -8,9 +8,10 @@
   margin-top: 60px;
 } */
 h4 {
-  font-size: 30px;
+  font-size: 22px;
   font-weight: 100;
   padding-top: 20px;
+  font-family: "Gotu", sans-serif;
 }
 .container {
   display: grid;
@@ -20,7 +21,7 @@ h4 {
   grid-gap: 2rem;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 30px;
   margin: auto;
 }
 * {
@@ -39,6 +40,7 @@ body {
 .container img {
   /* width: 140px;
   height: 140px; */
+  /* border-style: dashed;
   border-radius: 50%;
   margin: 10px;
   width: 154px;
@@ -46,7 +48,20 @@ body {
   border-top-left-radius: 50% 50%;
   border-top-right-radius: 50% 50%;
   border-bottom-right-radius: 50% 50%;
-  border-bottom-left-radius: 50% 50%;
+  border-bottom-left-radius: 50% 50%; */
+  flex-shrink: 0;
+  margin: 20px;
+  height: calc(120px + 6vw);
+  width: calc(120px + 6vw);
+  border: calc(8px + 0.2vw) solid transparent;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  background-size: cover;
+  box-sizing: border-box;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  background-image: var(--img-url),
+    linear-gradient(to bottom right, #ff3cac, #562b7c, #2b86c5);
 }
 .container h3 {
   font-weight: 100;
@@ -59,6 +74,8 @@ body {
 .position h3 {
   font-size: 30px;
   padding-top: 20px;
+  font-family: "Gotu", sans-serif;
+  font-weight: 100;
 }
 .container p {
   padding: 30px 0px 10px 0px;
@@ -67,13 +84,14 @@ body {
   font-weight: 100;
   color: rgb(75, 60, 60);
   font-size: 18px;
+  font-family: "Gotu", sans-serif;
 }
 
 .class-thumb {
   border-radius: 5px;
   background: #fff;
-  width: 304px;
-  height: 409px;
+  width: 314px;
+  height: 439px;
   /* height: 50vh; */
   display: flex;
   align-items: center;
@@ -107,7 +125,7 @@ h2 {
 
 .main-title-meet-team {
   font-size: 50px;
-  padding: 30px;
+  padding: 10px;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
